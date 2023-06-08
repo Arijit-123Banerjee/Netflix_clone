@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  height: 60%;
+  background-image: url("backgroundimg.jpg");
+  background-size: cover;
+  box-shadow: inset 0px 70px 170px black;
+  border-bottom: 15px solid rgb(28, 27, 27);
+}
+.nav {
+  height: 20%;
+  /* background-color: black; */
+}
+.nav > img {
+  height: 35px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.nav > button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 90px;
+  height: 32px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+p {
+  color: white;
+  font-size: 18px;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  text-align: center;
+}
+p:nth-child(2) {
+  font-size: 1.125rem;
+  margin: 20px auto;
+  width: 290px;
+  color: white;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+.email {
+  display: flex;
+  justify-content: center;
+}
+#email {
+  width: 294px;
+  height: 48px;
+  font-size: 1.2rem;
+  background-color: rgb(27, 26, 26);
+  opacity: 0.7;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 142px;
+  height: 48px;
+  font-size: 18px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: halvetica, arial, helvetica;
+}
+#second {
+  height: 10%;
+  background-color: black;
+  border-bottom: 15px solid rgb(28, 27, 27);
+}
+#fonttext {
+  font-size: 32px;
+  padding-top: 50px;
+  margin-top: 0px;
+}
+
+#describe {
+  width: 324px;
+  font-size: 17px;
+}
+.video {
+  display: flex;
+  justify-content: center;
+}
+#video1 {
+  height: 324px;
+  width: 100%;
+  margin-bottom: 150px;
+}
+#three {
+  height: 10%;
+  background-color: black;
+  border-bottom: 15px solid rgb(28, 27, 27);
+}
+#fonttext1 {
+  font-size: 32px;
+  padding-top: 50px;
+  margin-top: 0px;
+  align-items: center;
+}
+
+#describe2 {
+  width: 254px;
+  font-size: 17px;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+}
+#photo {
+  width: 310px;
+  height: 257px;
+}
+#five {
+  height: 10%;
+  background-color: black;
+  border-bottom: 15px solid rgb(28, 27, 27);
+}
+#fonttext1 {
+  font-size: 32px;
+  padding-top: 50px;
+  margin-top: 0px;
+  align-items: center;
+}
+
+#describe2 {
+  width: 254px;
+  font-size: 17px;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+}
+#photo {
+  width: 310px;
+  height: 257px;
+  margin-bottom: 50px;
+}
+#four {
+  height: 10%;
+  background-color: black;
+  border-bottom: 15px solid rgb(28, 27, 27);
+}
+#fonttext1 {
+  font-size: 32px;
+  padding-top: 50px;
+  margin-top: 0px;
+  align-items: center;
+}
+
+#describe2 {
+  width: 254px;
+  font-size: 17px;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+}
+#photo {
+  width: 342px;
+  height: 257px;
+  margin-bottom: 50px;
+}
+#last {
+  width: 60%;
+  width: 100%;
+  background-color: black;
+  border-bottom: 15px solid rgb(28, 27, 27);
+}
+#ans > p {
+  font-size: 32px;
+}
+.questionbox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.box {
+  align-self: center;
+  width: 95%;
+  height: 72px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+footer {
+  height: 60%;
+  background-color: black;
+}
+#question {
+  margin-left: 10px;
+  padding-top: 40px;
+  color: white;
+}
+li {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  margin-left: 10px;
+  color: rgb(86, 86, 86);
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 20px;
+}
+#logo2 {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: rgb(65, 65, 65);
+  font-size: 20px;
+}
+@media screen and (min-width: 884px) {
+  #main {
+    height: 70vh;
+  }
+  .nav {
+    height: 30%;
+    /* background-color: black; */
+  }
+  .nav > img {
+    height: 40px;
+  }
+  .nav > button {
+    width: 100px;
+    height: 45px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    color: white;
+    font-size: 29px;
+  }
+  p:nth-child(2) {
+    font-size: 1.2rem;
+    width: 450px;
+  }
+  .email {
+    display: flex;
+    justify-content: center;
+  }
+  #email {
+    width: 334px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+  ::placeholder {
+    color: white;
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 48px;
+    font-size: 18px;
+  }
+  #second {
+    height: 20%;
+  }
+  #fonttext {
+    font-size: 42px;
+  }
+
+  #describe {
+    width: 424px;
+    font-size: 25px;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+  }
+  #video1 {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  #three {
+    height: 20%;
+  }
+  #fonttext1 {
+    font-size: 42px;
+  }
+
+  #describe2 {
+    width: 424px;
+    font-size: 25px;
+  }
+  .photo {
+    display: flex;
+    justify-content: center;
+  }
+  #photo {
+    width: 450px;
+    height: 357px;
+  }
+  #five {
+    height: 20%;
+  }
+  #fonttext1 {
+    font-size: 42px;
+  }
+
+  #describe2 {
+    width: 424px;
+    font-size: 25px;
+  }
+  .photo {
+    display: flex;
+    justify-content: center;
+  }
+  #photo {
+    width: 450px;
+    height: 357px;
+    margin-bottom: 50px;
+  }
+  .questionbox {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .box {
+    align-self: center;
+    width: 846px;
+    height: 78px;
+    font-size: 25px;
+  }
+  footer {
+    height: 70%;
+  }
+  #question {
+    margin-left: 20px;
+    padding-top: 40px;
+  }
+  li {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    margin-left: 10px;
+    color: rgb(86, 86, 86);
+    text-decoration: none;
+    line-height: 43px;
+    font-size: 25px;
+  }
+  #logo2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(65, 65, 65);
+    font-size: 25px;
+  }
+}
+
+/* hover states */
+.nav > button:hover {
+  background-color: #ae161d;
+}
+button:hover {
+  background-color: #ae161d;
+}
+.box:hover {
+  background-color: rgb(69, 68, 68);
+}
+/* Adding media quries */
+@media screen and (min-width: 1280px) {
+  #main {
+    height: 100vh;
+  }
+  .nav {
+    height: 30%;
+    /* background-color: black; */
+  }
+  .nav > img {
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .nav > button {
+    width: 100px;
+    height: 45px;
+    margin-right: 80px;
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    color: white;
+    font-size: 35px;
+  }
+  p:nth-child(2) {
+    font-size: 1.5rem;
+
+    width: 550px;
+  }
+  .email {
+    display: flex;
+    justify-content: center;
+  }
+  #email {
+    width: 434px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+  ::placeholder {
+    color: white;
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 48px;
+    font-size: 18px;
+  }
+  #second {
+    height: 50%;
+  }
+  #fonttext {
+    font-size: 60px;
+  }
+
+  #describe {
+    width: 524px;
+    font-size: 25px;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+  }
+  #video1 {
+    height: 400px;
+    width: 50%;
+    margin-bottom: 150px;
+  }
+  #three {
+    height: 20%;
+  }
+  #fonttext1 {
+    font-size: 42px;
+  }
+
+  #describe2 {
+    width: 424px;
+    font-size: 25px;
+  }
+  .photo {
+    display: flex;
+    justify-content: center;
+  }
+  #photo {
+    width: 450px;
+    height: 357px;
+  }
+  #five {
+    height: 20%;
+  }
+  #fonttext1 {
+    font-size: 42px;
+  }
+
+  #describe2 {
+    width: 424px;
+    font-size: 25px;
+  }
+  .photo {
+    display: flex;
+    justify-content: center;
+  }
+  #photo {
+    width: 450px;
+    height: 357px;
+    margin-bottom: 50px;
+  }
+  .questionbox {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  .box {
+    align-self: center;
+    width: 90%;
+    height: 78px;
+    font-size: 25px;
+  }
+  footer {
+    height: 70%;
+  }
+  #question {
+    font-size: 1.2rem;
+  }
+  li {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    margin-left: 10px;
+    color: rgb(86, 86, 86);
+    text-decoration: none;
+    line-height: 43px;
+    font-size: 25px;
+  }
+  #logo2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(65, 65, 65);
+    font-size: 25px;
+  }
+}
